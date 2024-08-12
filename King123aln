@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elven Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .image-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info {
+            padding: 1rem;
+        }
+
+        .info h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .info p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .button-group {
+            margin-top: 1rem;
+        }
+
+        .button-group button {
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-group button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #444;
+            color: #fff;
+        }
+    </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+    <header>
+        <h1>Species With Elf Ears</h1>
+    </header>
+    <main>
+        <div class="gallery">
+            <!-- Card 1 -->
+            <div class="image-card">
+                <img src="./Elven Gallery_files/animal1.jpg" alt="Animal with Elf Ears">
+                <div class="info">
+                    <h2>Amahle</h2>
+                    <p><strong>Hobby: </strong>Likes ukuzula up and down</p>
+                    <p><strong>Height:</strong>Fairly short</p>
+                    <p><strong>Age:</strong>19 Years</p>
+                    <div class="button-group">
+                        <button onclick="alert(&#39;More about Elven Fox&#39;)">Learn More</button>
+                        <button onclick="alert(&#39;Adopt Elven Fox&#39;)">Adopt</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="image-card">
+                <img src="./Elven Gallery_files/person1.jpg" alt="Person with Elf Ears">
+                <div class="info">
+                    <h2>Amorh</h2>
+                    <p><strong>Likes: </strong>Money and food</p>
+                    <p><strong>Music Taste: </strong>Boring</p>
+                    <p><strong>Country:</strong>Mozambique</p>
+                    <div class="button-group">
+                        <button onclick="alert(&#39;More about Elven Warrior&#39;)">Learn More</button>
+                        <button onclick="alert(&#39;Join Elven Clan&#39;)">Join Clan</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="image-card">
+                <img src="./Elven Gallery_files/animal2.jpg" alt="Animal with Elf Ears">
+                <div class="info">
+                    <h2>Luyanda Nk</h2>
+                    <p><strong>Ability: </strong>Can Wistle Very Well</p>
+                    <p><strong>Health: </strong>Mentaly Sick</p>
+                    <p><strong>Talent: </strong>Empty Promises</p>
+                    <div class="button-group">
+                        <button onclick="alert(&#39;More about Elven Owl&#39;)">Learn More</button>
+                        <button onclick="alert(&#39;Adopt Elven Owl&#39;)">Adopt</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="image-card">
+                <img src="./Elven Gallery_files/person2.jpg" alt="Person with Elf Ears">
+                <div class="info">
+                    <h2>Mystical Elf</h2>
+                    <p><strong>Habitat:</strong> Crystal Mountains</p>
+                    <p><strong>Height:</strong> 7 meters</p>
+                    <p><strong>Age:</strong> 95 years</p>
+                    <div class="button-group">
+                        <button onclick="alert(&#39;More about Elven Mage&#39;)">Learn More</button>
+                        <button onclick="alert(&#39;Join Elven Clan&#39;)">Join Clan</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="image-card">
+                <img src="./Elven Gallery_files/animal3.jpg" alt="Animal with Elf Ears">
+                <div class="info">
+                    <h2>Rat</h2>
+                    <p><strong>Habitat:</strong> Mystic Meadows</p>
+                    <p><strong>Height:</strong> 1 meters</p>
+                    
+                    <div class="button-group">
+                        <button onclick="alert(&#39;More about Elven Deer&#39;)">Learn More</button>
+                        <button onclick="alert(&#39;Adopt Elven Deer&#39;)">Adopt</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="image-card">
+                <img src="./Elven Gallery_files/person3.jpg" alt="Person with Elf Ears">
+                <div class="info">
+                    <h2>Rabbit</h2>
+                    <p><strong>Habitat:</strong> Hidden Valleys</p>
+                    <p><strong>Height:</strong> 1.75 meters</p>
+                    
+                    <div class="button-group">
+                        <button onclick="alert(&#39;More about Elven Archer&#39;)">Learn More</button>
+                        <button onclick="alert(&#39;Join Elven Clan&#39;)">Join Clan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Elven Gallery</p>
+    </footer>
+
+
+</body></html>
